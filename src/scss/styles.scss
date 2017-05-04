@@ -1,0 +1,223 @@
+@import "../components/skeleton-sass/skeleton/skeleton.scss"; // import skeleton-scss
+@import "fonts";
+
+/* vars */
+
+// header
+$header-footer-background-color: #191A1C;
+// input
+$placeholder-color: #D7D9D6;
+// form h1
+$form-color-name: #85754E;
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 77px;
+    /* bottom = footer height */
+}
+
+body {
+    overflow-x: hidden;
+    background: url('../images/paper-bg.png')repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg {
+    background: url('../images/paper-bg.png')repeat;
+    background-repeat: repeat;
+    height: 595px;
+    margin: 0;
+    padding: 0;
+}
+
+.container:after {
+    content: none;
+}
+
+section {
+    margin: 53px auto;
+    background: #fff;
+    height: 425px;
+    max-width: 750px;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+
+form {
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: block;
+}
+
+h1 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+h1,
+input[type="submit"] {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+input[type=text],
+input[type=email],
+select {
+    margin-bottom: 25px;
+    border: 1px solid #D7D7D5;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .16), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+input[type="submit"].button-primary {
+    width: 117px;
+    height: 40px;
+    background-color: #E58A1F;
+    border: none;
+}
+
+::-webkit-input-placeholder,
+select {
+    /* WebKit, Blink, Edge */
+    color: $placeholder-color;
+}
+
+:-moz-placeholder,
+select {
+    /* Mozilla Firefox 4 to 18 */
+    color: $placeholder-color;
+}
+
+::-moz-placeholder,
+select {
+    /* Mozilla Firefox 19+ */
+    color: $placeholder-color;
+}
+
+:-ms-input-placeholder,
+select {
+    /* Internet Explorer 10-11 */
+    color: $placeholder-color;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 77px;
+    background: $header-footer-background-color;
+    .bronx-zoo-logo {
+        margin: 0 auto;
+        padding-top: 22px;
+        max-height: 27px;
+        width: 205px;
+        display: block;
+    }
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    .footer-links {
+        margin: 30px auto;
+        width: 100%;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 0 5px
+        }
+    }
+}
+
+
+/* font declarations */
+
+h1 {
+    font: {
+        family: 'Brandon Grotesque';
+        size: 20px;
+    }
+    family: 'Brandon Grotesque';
+    color: $form-color-name;
+    letter-spacing: 4px;
+}
+
+input[type="submit"].button-primary {
+    font: {
+        family: 'Brandon Grotesque';
+        weight: 500;
+        size: 14px;
+    }
+}
+
+input,
+select,
+footer {
+    font-family: 'Lato';
+}
+
+footer {
+    font-size: 14px;
+}
+
+
+/* This is our style for the invalid fields */
+
+input:invalid {
+    border-color: #900;
+    background-color: #FDD;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+
+/* This is the style of our error messages */
+
+.error,
+.success {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    padding: 0;
+    font-size: 80%;
+    color: #900;
+    display: none;
+}
+
+.success {
+    color: rgb(51, 255, 35);
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+.invalid-input {
+    background-color: #FFAEAE !important;
+    margin-bottom: 0px !important;
+}
+
+#spacer {
+    height: 100px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 767px) {
+    .container .column,
+    .container .columns {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}

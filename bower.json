@@ -1,0 +1,23 @@
+{
+  "name": "front-end-dev-exercise",
+  "homepage": "https://github.com/antonioOrtiz/front-end-dev-exercise",
+  "authors": [
+    "Antonio Pavicevac-Ortiz <17antonio.ortiz@gmail.com>"
+  ],
+  "description": "Dev test for Wildlife Conservation Society",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "^2.0.4"
+  },
+  "devDependencies": {
+    "skeleton-sass": "skeleton-sass-official#^3.1.2"
+  }
+}
